@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87c6117410.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Galeria</h2>
+    <div class="galeria">              <!--Enviando a SOURCE de cada imagem para a função-->
+        <img src="img-1.jpg" onclick="FullView(this.src)" />
+        <img src="img-2.jpg" onclick="FullView(this.src)" />
+        <img src="img-3.jpeg" onclick="FullView(this.src)" />
+    </div>
+
+    <div id="FullImageView">
+        <img id="FullImage" />
+        <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+    </div>  
+</body>
+</html>
+
+<script src="script.js"></script>
